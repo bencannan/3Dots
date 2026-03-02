@@ -623,16 +623,14 @@ body {
   right: 0;
   height: 2px;
   z-index: 2;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    transparent 35%,
-    rgba(255, 255, 255, 0.15) 45%,
-    var(--accent) 50%,
-    rgba(255, 255, 255, 0.15) 55%,
-    transparent 65%,
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      transparent 35%,
+      rgba(255, 255, 255, 0.15) 45%,
+      var(--accent) 50%,
+      rgba(255, 255, 255, 0.15) 55%,
+      transparent 65%,
+      transparent 100%);
   background-size: 200% 100%;
   background-position: 100% 0;
   animation: startups-line-flow 3s ease-in-out infinite;
@@ -652,6 +650,7 @@ body {
   0% {
     background-position: 100% 0;
   }
+
   100% {
     background-position: -100% 0;
   }
@@ -768,6 +767,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -781,14 +781,12 @@ body {
   .startups-worked-line {
     animation: none;
     background-position: 50% 0;
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.12) 20%,
-      var(--accent) 50%,
-      rgba(255, 255, 255, 0.12) 80%,
-      transparent 100%
-    );
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.12) 20%,
+        var(--accent) 50%,
+        rgba(255, 255, 255, 0.12) 80%,
+        transparent 100%);
   }
 }
 
@@ -836,15 +834,19 @@ body {
 .code-line .token-keyword {
   color: #c792ea;
 }
+
 .code-line .token-fn {
   color: #82aaff;
 }
+
 .code-line .token-param {
   color: #f78c6c;
 }
+
 .code-line .token-str {
   color: #c3e88d;
 }
+
 .code-line .token-comment {
   color: rgba(160, 164, 184, 0.7);
 }
@@ -1181,6 +1183,23 @@ body {
   margin: 0 0 24px;
   color: var(--text);
   transition: color 220ms ease-out;
+}
+
+/* Only this specific contact form section */
+.contact-form-special {
+  transform: translateY(-4px);
+  border-color: rgba(23, 54, 245, 0.35);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75);
+}
+
+/* Always show glow */
+.contact-form-special::before {
+  opacity: 1;
+}
+
+/* Title always accent */
+.contact-form-special .contact-card-title {
+  color: var(--accent);
 }
 
 .contact-card:hover .contact-card-title {
@@ -1905,16 +1924,20 @@ body {
   .careers-culture-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+
   .careers-openings .careers-section-lead {
     white-space: normal;
   }
+
   .careers-openings-list {
     grid-template-columns: minmax(0, 1fr);
   }
+
   .careers-opening-card {
     flex-direction: column;
     align-items: stretch;
   }
+
   .careers-opening-cta {
     align-self: flex-start;
   }
@@ -2453,22 +2476,27 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .footer-brand {
     align-items: center;
     text-align: center;
   }
+
   .footer-logo {
     margin-left: auto;
     margin-right: auto;
     object-position: center;
   }
+
   .footer-nav {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .footer-col {
     text-align: center;
   }
+
   .footer-social {
     justify-content: center;
   }
@@ -2515,6 +2543,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   /* Keep motion reduced unless explicitly forced on via data-motion="full" */
   html:not([data-motion="full"]) .js [data-reveal] {
     transition: none !important;
@@ -2704,11 +2733,13 @@ body {
 /* Animations ------------------------------------------------------------- */
 
 @keyframes corePulse {
+
   0%,
   100% {
     transform: scale(0.94);
     opacity: 0.7;
   }
+
   50% {
     transform: scale(1.06);
     opacity: 1;
@@ -2719,6 +2750,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -2729,9 +2761,9 @@ body {
     opacity: 0;
     transform: translateY(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
