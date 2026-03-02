@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3Dots – From idea to MVP in 15 days</title>
+    <meta
+      name="description"
+      content="3Dots is a development partner for founders. We help turn ideas into working MVPs in just 15 days after design approval."
+    />
+    <script>
+      // Set early to ensure scroll-reveal animates on first paint
+      document.documentElement.classList.add("js");
+      // Force motion on (site is intentionally animated)
+      document.documentElement.dataset.motion = "full";
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a href="#top" class="site-logo-link" aria-label="3Dots – Home">
+          <img src="assets/3dots-logo.png" alt="3Dots" class="site-logo" width="120" height="48" />
+        </a>
+        <button type="button" class="site-nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="site-nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main">
+          <a href="#top">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <main>
+        <section class="section hero" id="top">
+          <div class="hero-inner">
+            <div class="hero-content">
+              <p class="eyebrow">AI-enabled product development partner</p>
+              <h1 class="hero-title">We help founders launch MVP in just 15 days.</h1>
+              <p class="hero-body">
+                3Dots is a development partner for founders. We help you turn ideas into working MVPs in just
+                15 days, after design approval.
+              </p>
+              <div class="hero-actions">
+                <a href="#final-cta" class="btn primary">Build my MVP</a>
+                <button class="btn ghost" data-scroll-to="#framework">See the 15-days framework</button>
+              </div>
+              <div class="hero-code-wrap" aria-hidden="true">
+                <div class="code-panel code-panel--capabilities code-panel--hero">
+                  <div class="code-header">
+                    <span></span><span></span><span></span>
+                    <span class="code-title">mvp-builder.ts</span>
+                  </div>
+                  <div class="code-body" id="code-stream">
+                    <!-- Filled by JS for typing animation -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CORE CAPABILITIES -->
+        <section class="section" id="capabilities">
+          <div class="section-inner">
+            <div class="section-header">
+              <p class="eyebrow">Core capabilities</p>
+              <h2>Everything you need to go from idea to MVP.</h2>
+            </div>
+            <div class="card-grid">
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 6h16v10H4V6Z" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M8 20h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                      <path d="M9 10h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  IT &amp; Product Consulting
+                </h3>
+                <p>
+                  We help you choose the right tech stack, architecture, and product approach so your MVP doesn't become technical debt.
+                </p>
+              </article>
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M12 3L3 8v8l9 5 9-5V8l-9-5z" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M12 12l9-4M12 12v9M12 12L3 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  Product Designing
+                </h3>
+                <p>
+                  Clear UX flows and focused UI design that translate your idea into a usable, testable product—before development begins.
+                </p>
+              </article>
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M8 8l-4 4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M16 8l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M14 6l-4 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  Software Development
+                </h3>
+                <p>
+                  Fast, reliable web and mobile development focused on MVPs, performance, and scalability for your product.
+                </p>
+              </article>
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18z" stroke="currentColor" stroke-width="1.6" />
+                    </svg>
+                  </span>
+                  Software Testing
+                </h3>
+                <p>
+                  Structured functional and usability testing to ensure your MVP is stable, reliable, and ready for real users.
+                </p>
+              </article>
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 14h6v6H4v-6zM14 4h6v6h-6V4zM4 4h6v6H4V4zM14 14h6v6h-6v-6z" stroke="currentColor" stroke-width="1.6" />
+                    </svg>
+                  </span>
+                  Deployment &amp; DevOps Setup
+                </h3>
+                <p>
+                  Secure hosting, environment configuration, and launch-ready deployment so your MVP goes live smoothly and scales when needed.
+                </p>
+              </article>
+              <article class="card capability">
+                <h3 class="card-title">
+                  <span class="icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M9 3h6v4h-6V3Z" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M6 9h12v12H6V9Z" stroke="currentColor" stroke-width="1.6" />
+                      <path d="M9 12h6M9 15h6M9 18h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                  </span>
+                  AI Consulting &amp; Integration
+                </h3>
+                <p>
+                  We apply AI where it creates real value—automation, intelligence, and efficiency, not buzzwords.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- 15 DAYS / TIMELINE -->
+        <section class="section" id="framework">
+          <div class="section-inner">
+            <div class="section-header">
+              <p class="eyebrow">The 15-DAYS FRAMEWORK</p>
+              <h2>Design comes first. Execution comes next.</h2>
+              <p class="muted wide">
+                A structured, design-led approach that takes your idea from concept to a working MVP
+                in just 15 days. Once the design is finalized and approved, we move into a structured,
+                fast-paced build process designed to deliver a reliable, launch-ready MVP without chaos.
+              </p>
+            </div>
+
+            <div class="timeline timeline-centered">
+              <div class="timeline-line" aria-hidden="true"></div>
+
+              <article class="timeline-item" data-phase="1" data-side="left">
+                <div class="timeline-badge">Days 1–5</div>
+                <div class="timeline-content">
+                  <h3 class="card-title">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3l7 4v10l-7 4-7-4V7l7-4Z" stroke="currentColor" stroke-width="1.6" />
+                        <path d="M9 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                      </svg>
+                    </span>
+                    Phase 1: Foundation &amp; Setup
+                  </h3>
+                  <p class="muted">
+                    We start by setting the groundwork for clean, scalable development.
+                  </p>
+                  <h4>What happens in this phase:</h4>
+                  <ul>
+                    <li>Final design handoff and walkthrough</li>
+                    <li>Technical architecture setup</li>
+                    <li>Backend and frontend foundations</li>
+                    <li>Database and core system configuration</li>
+                    <li>Environment and deployment setup</li>
+                  </ul>
+                  <p class="outcome">
+                    <span>Outcome:</span> A solid technical base ready for feature development.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item" data-phase="2" data-side="right">
+                <div class="timeline-badge">Days 6–10</div>
+                <div class="timeline-content">
+                  <h3 class="card-title">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M4 7h16M8 3v4m8-4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                        <path d="M6 11h12v10H6V11Z" stroke="currentColor" stroke-width="1.6" />
+                        <path d="M9 15h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                      </svg>
+                    </span>
+                    Phase 2: Core Feature Development
+                  </h3>
+                  <p class="muted">
+                    This is where your MVP starts taking shape.
+                  </p>
+                  <h4>What happens in this phase:</h4>
+                  <ul>
+                    <li>Development of core MVP features</li>
+                    <li>API integrations and logic implementation</li>
+                    <li>Frontend development aligned with approved designs</li>
+                    <li>Continuous internal testing</li>
+                  </ul>
+                  <p class="outcome">
+                    <span>Outcome:</span> A functional MVP with all critical features in place.
+                  </p>
+                </div>
+              </article>
+
+              <article class="timeline-item" data-phase="3" data-side="left">
+                <div class="timeline-badge">Days 11–15</div>
+                <div class="timeline-content">
+                  <h3 class="card-title">
+                    <span class="icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M4 14l5 5L20 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    Phase 3: Refinement, Testing &amp; Handover
+                  </h3>
+                  <p class="muted">
+                    We polish, test, and prepare your MVP for real-world use.
+                  </p>
+                  <h4>What happens in this phase:</h4>
+                  <ul>
+                    <li>Feature refinement and performance optimization</li>
+                    <li>Bug fixing and stability checks</li>
+                    <li>End-to-end testing</li>
+                    <li>Deployment support</li>
+                    <li>Basic documentation and handover</li>
+                  </ul>
+                  <p class="outcome">
+                    <span>Outcome:</span> A stable, working MVP ready for launch or user testing.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <p class="framework-footer">
+              The goal isn’t just to build fast—it’s to build right.<br />
+              Our 15 days approach ensures speed, structure, and quality without shortcuts.
+            </p>
+          </div>
+        </section>
+
+        <!-- WHY WE MAKE MVP LAUNCHES HAPPEN IN 15 DAYS -->
+        <section class="section section-approach" id="problem-approach">
+          <p class="section-approach-title">Why we make MVP launches happen in 15 days?</p>
+          <h2 class="section-approach-headline">The early you validate your idea, the less you lose</h2>
+          <div class="approach-body">
+            <p class="approach-p">The goal is to help founders validate their ideas before time, money, resources, and energy are lost. A MVP is not your final product. It is the fastest way to learn whether your idea works.</p>
+            <p class="approach-p approach-quote">Great ideas don't fail because they are weak. They fail because execution is slow.</p>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section" id="faq">
+          <div class="section-inner">
+            <div class="faq-header">
+              <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+              <h2 class="faq-title">Frequently Asked Questions (FAQ)</h2>
+              <p class="faq-description">Common questions about our 15-day MVP process, pricing, and how we work with founders.</p>
+            </div>
+            <ul class="faq-list" role="list">
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-q-1">
+                  <span class="faq-question-text">Is an MVP in 15 days actually realistic?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-q-1" hidden>
+                  <p>Yes, when the scope is clear. The 15 days refer strictly to the development phase after design approval. Once the scope and UI/UX are finalized, we execute in a focused 15-day sprint to deliver a working MVP. Clarity creates speed.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-q-2">
+                  <span class="faq-question-text">Why don't you include design inside the 15 days?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-q-2" hidden>
+                  <p>Because speed without clarity creates waste. We complete and approve design first so development becomes execution—not experimentation. That's how we protect your time and budget.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-q-3">
+                  <span class="faq-question-text">What if my idea still needs refinement?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-q-3" hidden>
+                  <p>That's normal. Most founders don't need development first, they need clarity first. We help refine your idea, define the right MVP scope, and prioritize only what's necessary for early validation before moving into design and development.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-q-4">
+                  <span class="faq-question-text">What kind of products can realistically be built in 15 days?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-q-4" hidden>
+                  <p>Focused MVPs with clearly defined core features — SaaS tools, web apps, mobile apps, AI-enabled platforms, and internal tools. If the scope is too large, we help break it into smart phases. The goal is not to build everything — it's to build what proves the idea works.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-q-5">
+                  <span class="faq-question-text">How do you maintain quality while moving fast?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-q-5" hidden>
+                  <p>Speed comes from clarity, not shortcuts. We follow a structured development process, clean architecture practices, and internal testing to ensure stability and scalability.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-q-6">
+                  <span class="faq-question-text">How is 3Dots different from a typical agency?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-q-6" hidden>
+                  <p>Agencies focus on delivering what is asked. We focus on challenging what should be built. We work like product partners—questioning assumptions, refining scope, and aligning every decision to validation and speed.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-7" id="faq-q-7">
+                  <span class="faq-question-text">How much does it cost to build an MVP with 3Dots?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-q-7" hidden>
+                  <p>Pricing depends on scope and complexity. Since we focus on well-defined MVPs, we provide clear, fixed estimates after understanding your requirements—no vague timelines or hidden extensions.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-8" id="faq-q-8">
+                  <span class="faq-question-text">Will my MVP be scalable for future growth?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-q-8" hidden>
+                  <p>Yes. While it's built for validation, the architecture is designed to evolve—so you can scale without rebuilding from scratch.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-9" id="faq-q-9">
+                  <span class="faq-question-text">What happens after the 15-day development sprint?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-9" role="region" aria-labelledby="faq-q-9" hidden>
+                  <p>Launch is the beginning, not the end. We support deployment, launch readiness, and can continue as your long-term development partner—helping you iterate based on real user feedback.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-10" id="faq-q-10">
+                  <span class="faq-question-text">How involved do I need to be as a founder?</span>
+                  <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+                </button>
+                <div class="faq-answer" id="faq-answer-10" role="region" aria-labelledby="faq-q-10" hidden>
+                  <p>Very involved during scope definition and design. Fast execution depends on quick decisions and clear communication. The more aligned we are, the faster we move.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- STARTUPS WORKED WITH US (marquee) -->
+        <section class="section startups-worked" id="startups-worked">
+          <div class="startups-worked-line startups-worked-line--top" aria-hidden="true"></div>
+          <div class="section-inner">
+            <div class="section-header startups-worked-header">
+              <p class="eyebrow">Startups worked with us</p>
+              <h2>Trusted by founders building the next big thing.</h2>
+            </div>
+            <div class="startups-marquee-wrap" aria-hidden="true">
+              <div class="startups-marquee-track">
+                <div class="startup-item">
+                  <div class="startup-logo" aria-hidden="true">
+                    <img src="assets/Bonafai.png" alt="" width="100" height="100" />
+                  </div>
+                  <span class="startup-name">Bonafai</span>
+                </div>
+                <div class="startup-item">
+                  <div class="startup-logo" aria-hidden="true">
+                    <img src="assets/Gear Loop.png" alt="" width="100" height="100" />
+                  </div>
+                  <span class="startup-name">Gear Loop</span>
+                </div>
+                <div class="startup-item">
+                  <div class="startup-logo" aria-hidden="true">
+                    <img src="assets/Picstol.png" alt="" width="100" height="100" />
+                  </div>
+                  <span class="startup-name">Picstol</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="startups-worked-line startups-worked-line--bottom" aria-hidden="true"></div>
+        </section>
+
+        <!-- WHO WE WORK WITH -->
+        <section class="section" id="who-we-work-with">
+          <div class="section-inner">
+            <div class="section-header">
+              <p class="eyebrow">Who we like to work with</p>
+              <h2>Founders who want to move with intent.</h2>
+            </div>
+            <p class="lead">We work best with founders who:</p>
+            <ul class="check-list">
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 13l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Have an idea they want to validate
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 13l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Want to move fast without compromising quality
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 13l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                Value clarity, collaboration, and transparency
+              </li>
+              <li>
+                <span class="check" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 13l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                See technology as a growth enabler
+              </li>
+            </ul>
+            <div class="who-footer">
+              <p class="muted">If you’re looking for the cheapest option, we may not be the right fit.</p>
+              <p class="muted">If you’re looking for the right partner, let’s talk.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="section final-cta" id="final-cta">
+          <div class="section-inner final-cta-content">
+            <div>
+              <p class="eyebrow">Let’s build</p>
+              <h2>Have an idea?</h2>
+              <p class="lead">
+                Whether you’re refining a concept or ready to build, we’re here to help you
+                take the next step.
+              </p>
+            </div>
+            <div class="final-cta-actions">
+              <a href="mailto:hello@3dots.co?subject=Build%20my%20MVP" class="btn primary large">
+                Build your MVP
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="assets/3dots-logo.png" alt="3Dots" class="footer-logo" width="200" height="80" />
+            <p class="footer-tagline">From idea to MVP in 15 days.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer">
+            <div class="footer-col">
+              <h4>Contact</h4>
+              <ul class="footer-contact">
+                <li><a href="mailto:hello@3dots.co">hello@3dots.co</a></li>
+                <li><a href="tel:+919894070458">+91 9894070458</a></li>
+                <li>317/4 Joe Daniel Street, KP Road, Nagercoil, Tamil Nadu – 629003</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow us</h4>
+              <ul class="footer-social">
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="GitHub">GitHub</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <a href="#top" class="footer-back-to-top" aria-label="Back to top">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+          </a>
+          <span>© <span id="year"></span> 3Dots. All rights reserved.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

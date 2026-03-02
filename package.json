@@ -1,0 +1,11 @@
+{
+  "name": "3dots-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal dark theme marketing site for 3Dots with micro-animations and 15-day MVP framework.",
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  }
+}
+
