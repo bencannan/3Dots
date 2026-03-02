@@ -313,3 +313,59 @@ if (navToggle && siteHeader && siteNav) {
     }
   });
 }
+// ---------------------------------------------------------------------------
+// Contact form handler using EmailJS
+// ---------------------------------------------------------------------------
+
+const EMAILJS_SERVICE_ID = "service_sp690l9";
+const EMAILJS_TEMPLATE_ID = "template_k5l0duh";
+const EMAILJS_PUBLIC_KEY = "5eUQMhBa6n5GyHqNK";
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize EmailJS
+  if (window.emailjs) {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  } else {
+    console.error("EmailJS SDK not loaded.");
+    return;
+  }
+
+  const contactForm = document.getElementById("contact-form");
+
+  if (!contactForm) return;
+
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector("button[type='submit']");
+    if (submitBtn) submitBtn.disabled = true;
+
+    // Add current time
+    const timeField = document.getElementById("contact-time");
+    if (timeField) {
+      timeField.value = new Date().toISOString();
+    }
+    const messageField = document.getElementById("contact-message");
+    if (messageField) {
+      let msg = messageField.value.trim();
+      // Optional: limit length
+      if (msg.length > 2000) {
+        msg = msg.substring(0, 2000) + "… (message truncated)";
+        messageField.value = msg;
+      }
+      msg = msg.replace(/[<>{}]/g, "");
+    }
+    emailjs
+      .sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+      .then(function () {
+        alert("Your message has been sent successfully!");
+        contactForm.reset();
+        if (submitBtn) submitBtn.disabled = false;
+      })
+      .catch(function (error) {
+        console.error("EmailJS Error:", error);
+        alert("Something went wrong. Please try again later.");
+        if (submitBtn) submitBtn.disabled = false;
+      });
+  });
+});
