@@ -63,14 +63,14 @@ const codeLines = [
   '<span class="token-comment">// Design → build → launch in 15 days</span>',
   '<span class="token-keyword">const</span> <span class="token-param">result</span> = <span class="token-keyword">await</span> <span class="token-fn">buildMVP</span>(<span class="token-str">"your idea"</span>);',
   '<span class="token-fn">console</span>.<span class="token-fn">log</span>(result); <span class="token-comment">// "launch-ready MVP"</span>',
-  "",
-  '<span class="token-comment">// Phase 1: Foundation (Days 1–5)</span>',
-  '<span class="token-comment">// Phase 2: Core features (Days 6–10)</span>',
-  '<span class="token-comment">// Phase 3: Test & handover (Days 11–15)</span>',
-  "",
-  '<span class="token-keyword">const</span> <span class="token-param">ready</span> = <span class="token-keyword">await</span> <span class="token-fn">buildMVP</span>(<span class="token-str">"your idea"</span>);',
-  '<span class="token-fn">console</span>.<span class="token-fn">log</span>(<span class="token-str">"Done:"</span>, ready);',
-];
+  "",];
+  // '<span class="token-comment">// Phase 1: Foundation (Days 1–5)</span>',
+  // '<span class="token-comment">// Phase 2: Core features (Days 6–10)</span>',
+  // '<span class="token-comment">// Phase 3: Test & handover (Days 11–15)</span>',
+  // "",
+  // '<span class="token-keyword">const</span> <span class="token-param">ready</span> = <span class="token-keyword">await</span> <span class="token-fn">buildMVP</span>(<span class="token-str">"your idea"</span>);',
+  // '<span class="token-fn">console</span>.<span class="token-fn">log</span>(<span class="token-str">"Done:"</span>, ready);',
+
 
 const codeStreamEl = document.getElementById("code-stream");
 
